@@ -13,6 +13,3 @@ const FileController = require("./controllers/FileController");
 routes.post('/boxes/:id/files', multer(multerConfig).single('file'), FileController.store);
 // routes.get('/files/:path', FileController.show);
 module.exports = routes;
-
-
-
